@@ -1,0 +1,37 @@
+:root {
+  font-size: 16px;
+
+  --purple-light: #6363db;
+  --purple-mid: #4f4fb9;
+  --purple-dark: #32325f;
+
+  --grey: #9b9b9d;
+  --white: #ebebfc;
+  --yellow: #f9d64e;
+  --green: #03ab4f; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5fa;
+}
+
+/* body,
+input,
+button {
+  font-family: "Noto Sans", sans-serif;
+} */
+
+button {
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
