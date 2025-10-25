@@ -42,7 +42,7 @@ html {
 }
 
 body {
-  background-color: #f5f5fa;
+  background-color: var(--white);
 }
 
 button {

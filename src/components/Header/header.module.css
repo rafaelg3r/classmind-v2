@@ -9,6 +9,22 @@ header {
   /* height: 100%; */
   background-image: url("../../assets/backgrounds/header-bg.png");
   background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+}
+
+header::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  height: 2.4rem;
+  width: 100vw;
+  background-color: var(--white);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 1.2rem 0;
+  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .headerNav {
