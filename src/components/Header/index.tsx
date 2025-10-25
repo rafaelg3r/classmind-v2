@@ -1,20 +1,17 @@
 import styles from "./header.module.css";
 
-import { dateTime, dayMonth, greeting } from "../../utils/dateTimeGreeting.ts";
+import { greeting } from "../../utils/greeting.ts";
 import { IconButton } from "../IconButton/index.tsx";
+import { InfoButton } from "../InfoButton/index.tsx";
 
 export function Header() {
   return (
     <header>
       <div className={styles.headerNav}>
-        <div className={styles.logotipoContainer}>
+        <div className={`elementContainer ${styles.logotipoContainer}`}>
           <img src="src/assets/icons/teacher.svg" alt="" />
           <strong>ClassMind</strong>
         </div>
-
-        <span className={styles.headerDate}>
-          {dayMonth} - {dateTime}
-        </span>
 
         <div className={styles.options}>
           <IconButton icon="gear" />
@@ -24,7 +21,7 @@ export function Header() {
 
       <h1>{greeting}, estudante!</h1>
 
-      <div className={styles.headerMisc}></div>
+      <InfoButton content="Última atualização: 15:30" />
     </header>
   );
 }

@@ -1,6 +1,6 @@
 import styles from "./iconButton.module.css";
 
-// import icon from "../Header/index.tsx" 
+// import icon from "../Header/index.tsx"
 
 type IconButtonProps = {
   icon: string;
@@ -8,7 +8,7 @@ type IconButtonProps = {
 
 export function IconButton({ icon }: IconButtonProps) {
   return (
-    <button className={styles.iconButton}>
+    <button className={`elementContainer ${styles.iconButton}`}>
       <img src={"src/assets/icons/" + icon + ".svg"} alt="" />
     </button>
   );

@@ -1,14 +1,33 @@
 :root {
-  font-size: 16px;
+  --f-barlow: "Barlow", sans-serif;
+  --f-geist: "Geist", sans-serif;
+  --f-itim: "Itim", cursive;
+  --f-tilt-warp: "Tilt Warp", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
 
-  --purple-light: #6363db;
-  --purple-mid: #4f4fb9;
-  --purple-dark: #32325f;
-
-  --grey: #9b9b9d;
+  --dark-blue: #171a21;
+  --purple: #6363db;
   --white: #ebebfc;
   --yellow: #f9d64e;
-  --green: #03ab4f; 
+  --green: #03ab4f;
+
+  --basic-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  
+  --purple-gradient-simple: linear-gradient(90deg, #6363db 0%, #171a21 100%);
+  --purple-gradient-multi-90: linear-gradient(
+    90deg,
+    #6363db 0%,
+    #38388c 30%,
+    #6363db 70%,
+    #38388c 100%
+  );
+  --purple-gradient-multi-45: linear-gradient(
+    45deg,
+    #6363db 0%,
+    #38388c 30%,
+    #6363db 70%,
+    #38388c 100%
+  );
 }
 
 * {
@@ -17,21 +36,30 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f5f5fa;
 }
 
-/* body,
-input,
-button {
-  font-family: "Noto Sans", sans-serif;
-} */
-
 button {
   cursor: pointer;
   transition: filter 0.2s;
+  border: none;
 }
 
 button:hover {
   filter: brightness(0.9);
+}
+
+.elementContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: var(--basic-shadow);
 }

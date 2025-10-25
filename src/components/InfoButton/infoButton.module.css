@@ -1,0 +1,13 @@
+.infoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  background-color: var(--dark-blue);
+  color: var(--green);
+  font-family: var(--f-itim);
+  font-size: 1.2rem;
+  box-shadow: var(--basic-shadow);
+}
