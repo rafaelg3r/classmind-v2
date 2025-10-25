@@ -8,7 +8,7 @@ function App() {
       <Header />
       <div className="borderDivisor"></div>
     </>
-  )
+  );
 }
 
 export default App;
